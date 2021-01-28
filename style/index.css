@@ -1,0 +1,233 @@
+/* Add CSS styling here */
+/* 
+Reset copied from:
+
+http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li, 
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+    font: inherit;
+	/* vertical-align: baseline; */
+}
+/* General Styles */
+body {
+	font-family: 'Vulf Sans', monospace;
+    border: 1px solid gray;
+    max-width: 100%;
+	
+}
+html {
+	font-size: 62.5%;
+}
+* {
+	max-width: 100%;
+	max-height: 100%;
+	
+	border: 2px solid black;
+}
+
+
+
+area {
+    outline:none;
+}
+nav {
+   display: flex;
+   justify-content: space-evenly;
+   font-size: 2.5rem;
+   color: green;
+}
+
+header {
+    background-color: #ff2400;
+    width: 100%;
+    text-align: center;
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+  }
+
+/* Page content */
+.content {
+    padding: 16px;
+  }  
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+    padding-top: 102px;
+  }  
+
+iframe {
+    width: 100vw;
+    height:100vh}
+
+div.zooms {
+    width: 800px;
+    height:auto;
+    margin: 0 auto;
+}
+
+.logo {
+    margin:0 auto;
+}
+
+.gamesContainer {
+    margin-top: 150px;
+}
+
+h2{
+    font-size: 3rem;
+}
+
+a {
+  font-size: 2.4rem;  
+}
+
+div#Home.content {
+    background-color: #ff2400;
+    color: white;
+}
+
+        /* The dropdown container */
+.dropdown {
+        float: left;
+        overflow: hidden;
+    }/* Dropdown button */
+.dropdown .dropbtn{
+    border: none;
+    outline: none;
+    color: white;
+    background-color: inherit;
+    font-family: inherit;
+    /* Important for vertical align on mobile phones */
+    margin: 0;
+    font-size: 2.5rem;
+
+}
+
+/* Add a red background color to navbar links on hover */
+
+.navbar a:hover, .dropdown:hover .dropbtn{
+        background-color: green
+}
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;}
+    
+    /* Links inside the dropdown */
+    .dropdown-content a {
+        font-size: 1.2rem;
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;}
+        /* Add a grey background color to dropdown links on hover */
+    .dropdown-content a:hover {
+        background-color: rgba(106, 206, 12, 0.589);}/* 
+        Show the dropdown menu on hover */
+        .dropdown:hover .dropdown-content {
+            display: block;}
+    
+    .replaceZooms {
+        display: none;
+    }
+
+
+
+    @media (max-width: 850px) {
+        .zooms {
+            display: none;
+                }
+        .replaceZooms {
+
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .replaceZooms h2 {
+            text-align: center;
+        }
+
+        .replaceZooms p {
+            text-align: center;
+            font-size: 2rem;
+        }
+        .replaceZooms a {
+            text-decoration: none;
+            border: solid black 2px;
+            border-radius: 10px;
+            width: 80%;
+            height: 10vh;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px auto;
+        }
+
+        .dining{
+            background-image: url(https://i.ibb.co/t4mRcrk/IMG-0597.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            opacity: 1;
+        }
+        .stockings{
+             background-image: url(https://i.ibb.co/PhFyjjD/IMG-0596.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            opacity: 1;
+        }
+        .tree{
+             background-image: url(https://i.ibb.co/wWDBkBh/IMG-0598.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            opacity: 1;
+        }
+        .basement{
+            background-image: url(https://i.ibb.co/G9Rc6CG/IMG-0599.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            opacity: 1;
+        }
+        .nook{
+             background-image: url(https://i.ibb.co/L5ykZNm/IMG-0595.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            opacity: 1;
+        }
+        span {
+            background-color: white;
+            color: #ff2400;
+            border: solid #ff2400 1 px ;
+            border-radius: 5px;
+        }
+
+                }
